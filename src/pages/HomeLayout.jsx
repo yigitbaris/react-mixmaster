@@ -1,11 +1,11 @@
-import React from 'react'
-import { Outlet, useNavigation } from 'react-router-dom'
-import Navbar from '../components/Navbar'
+import { Outlet, useNavigation } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 const HomeLayout = () => {
-  const navigation = useNavigation()
-  const isPageLoading = navigation.state === 'loading'
-  const value = 'some value'
+  const navigation = useNavigation();
+
+  const isPageLoading = navigation.state === 'loading';
+  const value = 'some value';
   return (
     <>
       <Navbar />
@@ -17,6 +17,6 @@ const HomeLayout = () => {
         )}
       </section>
     </>
-  )
-}
-export default HomeLayout
+  );
+};
+export default HomeLayout;

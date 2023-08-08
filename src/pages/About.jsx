@@ -1,5 +1,5 @@
-import React from 'react'
-import Wrapper from '../assets/wrappers/AboutPage'
+import Wrapper from '../assets/wrappers/AboutPage';
+
 const About = () => {
   return (
     <Wrapper>
@@ -13,6 +13,6 @@ const About = () => {
         time, and let the laughter and giggles flow!
       </p>
     </Wrapper>
-  )
-}
-export default About
+  );
+};
+export default About;

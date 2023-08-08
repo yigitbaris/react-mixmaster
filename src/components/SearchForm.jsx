@@ -1,10 +1,9 @@
-import React from 'react'
-import Wrapper from '../assets/wrappers/SearchForm'
-import { Form, useNavigation } from 'react-router-dom'
+import Wrapper from '../assets/wrappers/SearchForm';
+import { Form, useNavigation } from 'react-router-dom';
 
 const SearchForm = ({ searchTerm }) => {
-  const navigation = useNavigation()
-  const isSubmitting = navigation.state === 'submitting'
+  const navigation = useNavigation();
+  const isSubmitting = navigation.state === 'submitting';
   return (
     <Wrapper>
       <Form className='form'>
@@ -14,15 +13,11 @@ const SearchForm = ({ searchTerm }) => {
           className='form-input'
           defaultValue={searchTerm}
         />
-        <button
-          type='submit'
-          className='btn'
-          disabled={isSubmitting}
-        >
+        <button type='submit' className='btn' disabled={isSubmitting}>
           {isSubmitting ? 'searching...' : 'search'}
         </button>
       </Form>
     </Wrapper>
-  )
-}
-export default SearchForm
+  );
+};
+export default SearchForm;
